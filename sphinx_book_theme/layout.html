@@ -29,6 +29,7 @@
     {% if not is_single_page %}
         {% include "sidebar.html" %}
     {%- endif %}
+    {{ generate_toc_html() }}
 </div>
 {% endblock %}
 
