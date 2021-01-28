@@ -1,7 +1,7 @@
-<div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        {% if theme_topbar%}
+{% if theme_topbar%}
+    <div class="topbar container-xl fixed-top">
+        <div class="topbar-contents row">
+            <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
             <div class="col pl-md-4 topbar-main">
                 {% if theme_single_page != True %}
                 <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
@@ -25,10 +25,10 @@
                 {% endif %}
                 {% include "topbar/launchbuttons.html" %}
             </div>
-        {% endif %}
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            {{ generate_toc_html() }}
+            <!-- Table of contents -->
+            <div class="d-none d-md-block col-md-2 bd-toc show">
+                {{ generate_toc_html() }}
+            </div>
         </div>
     </div>
-</div>
+{% endif %}
