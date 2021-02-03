@@ -110,6 +110,8 @@ html_theme_options = {
     "use_repository_button": True,
     "use_download_button": True,
     "use_fullscreen_button": True,
+    "use_topbar": True,
+    "use_footer": True,
     # For testing
     # "home_page_in_toc": True,
     # "single_page": True,
